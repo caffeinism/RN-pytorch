@@ -6,7 +6,7 @@
 - Pytorch 1.0.0
 - TensorBoardX
 
-## usage
+## Usage
 
 generate sort-of-clevr dataset
 ```
@@ -24,7 +24,7 @@ python train.py
     --dataset [data/sort-of-clevr.pickle]
     --init [kaiming]
     --resume []
-    --model_type ['light_light_light]
+    --model_type [light_light_light]
     --seed [12345]
     --n_cpu [4]
 ```
@@ -36,3 +36,9 @@ python test.py
     --dataset
     --model
 ```
+
+## Result
+
+| Sort-of-CLEVR | light_light_light | heavy_heavy_heavy | patch_light_light |
+|---------------|-------------------|-------------------|-------------------|
+| Accuracy      | 94%               | 94%               | 97%               |
